@@ -1,0 +1,43 @@
+<div id="index" class="tabcontent">
+    <h1>Home</h1>
+    <p>BotBlocker tegen opkoop bots</p>
+  </div>
+  
+  <div id="kaartenkopen" class="tabcontent">
+    <h1>Kaarten kopen</h1>
+    <p>Koop veilige en authentieke tickets</p>ß
+  </div>
+  
+  <div id="overons" class="tabcontent">
+    <h1>Over ons</h1>
+    <p>Over BotBlocker</p>
+  </div>
+  
+  <div id="contact" class="tabcontent">
+    <h1>Contact</h1>
+    <p>Voor vragen neem contact met ons op</p>
+  </div>
+  
+  <button class="tablink" onclick="openCity('index', this, '#18392b')" ><a href="index.html">Menu</a></button>
+  <button class="tablink" onclick="openCity('kaartenkopen', this, '#0f5132')"id="defaultOpen"><a href="kaartenkopen.html">Kaarten kopen</a></button>
+  <button class="tablink" onclick="openCity('overons', this, '#066839')"><a href="overons.html">Over ons</a></button>
+  <button class="tablink" onclick="openCity('contact', this, '#1b7d4f')"><a href="contact.html">Contact</a></button>
+
+  <script>
+    function openCity(cityName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(cityName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
