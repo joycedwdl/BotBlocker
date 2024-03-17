@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BotBlocker</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon"href="/images/Logo2.png"/>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <h1>BotBlocker</h1>
-        <p1>Samen tegen opkoop bots</p1>
-      </div>
-    
+      <h1 id="title">BotBlocker</h1>
+      <p1>Samen tegen opkoop bots</p1>
+    </div>
+
     <ul>
-        <li><a id="defaultOpen" href="index.html">Menu</a></li>
-        <li><a href="kaartenkopen.html">Kaarten kopen</a></li>
-        <li><a href="overons.html">Over ons</a></li>
-        <li><a href="contact.html">Contact</a> </li>
-        <li style="float: right;"><a href="inloggen.html">Log in</a></li>
-        <li style="Float:right">
-            <form action="#">
+      <li><a onclick="LoadPage('menu.html','BotBlocker')">Menu</a></li>
+      <li><a onclick="LoadPage('kaartenkopen.html','Kaarten kopen')">Kaarten kopen</a></li>
+      <li><a onclick="LoadPage('overons.html','Over ons')">Over ons</a></li>
+      <li><a onclick="LoadPage('contact.html','Contact')">Contact</a> </li>
+      <li>
+        <div class="search">
+          <form action="#">
             <input type="text" placeholder="Zoeken" required>
             <button type="submit">Submit</button>
           </form>
-        </li>
-      </ul>
+        </div>
+      </li>
+      <li style="float: right;"><a onclick="LoadPage('inloggen.html','Inloggen')">Log in</a></li>
+    </ul>
+
+    <div class="main" onclick="">
+      <!-- content-->
+      <div class="hd-content" id="content">
+      </div>
+    </div>
 
     <div class="footer">
             @ 2024 <a href="https://BotBlocker.com" target="_blank">BotBlocker.com</a>
             <p><img src="/images/logo1.png" alt="logo" width="60" height="60"></p>
             <p>Privacy  Cookies  Disclaimer  Toegankelijkheid</p>
-      </div>
-    </body>
-    </html>
+    </div>
+
+    <!-- javascript -->
+    <script>
+        async function LoadPage(html,title) {
+            document.getElementById('title').textContent = title;
+            const response = await fetch(html);
+            document.getElementById('content').innerHTML = await response.text();
+            document.getElementById('content').focus();
+        }
+        document.addEventListener('DOMContentLoaded', LoadPage('menu.html','BotBlocker'), false);
+    </script>
+  </body>
+</html>
