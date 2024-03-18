@@ -16,11 +16,10 @@
     </div>
 
     <ul>
-      <li class="menu"><a onclick="LoadPage('menu.html','BotBlocker','Menu')">Menu</a></li>
+      <li class="menu"><a onclick="LoadPage('menu.html','BotBlocker','Menu')">Home</a></li>
       <li class="menu"><a onclick="LoadPage('kaartenkopen.html','Kaarten kopen','Kaarten kopen')">Kaarten kopen</a></li>
       <li class="menu"><a onclick="LoadPage('overons.html','Over ons','Over ons')">Over ons</a></li>
       <li class="menu"><a onclick="LoadPage('contact.html','Contact','Contact')">Contact</a> </li>
-      <li class="menu"><a onclick="LoadPage('try.html','try','try')">try</a> </li>
       <li class="menu">
         <!--<div class="search">
           <form action="#">
@@ -33,9 +32,10 @@
       <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
     </ul>
     
+    <!--log in page-->
     <div id="id01" class="modal">
       
-        <form class="modal-content animate" action="/action_page.php" method="post">
+        <form class="modal-content animate" action="index.html" method="post">
           <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
             <img src="/images/avatar.svg" alt="Avatar" class="avatar" height="200">

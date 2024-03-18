@@ -15,19 +15,18 @@ body {
 h1 {
   font-size: 72px;
   background: -webkit-linear-gradient(#a47a1e, #d3a84c, #ffec94, #e6be69, #ffd87c, #b58f3e, #956d13);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 p1{
   font-size: 25px;
   background: -webkit-linear-gradient(#a47a1e, #d3a84c, #ffec94, #e6be69, #ffd87c, #b58f3e, #956d13);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-body {font-family: Arial, Helvetica, sans-serif;}
-
+/*log in page*/
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -43,14 +42,13 @@ button {
   background-color: teal;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
 }
 
 button:hover {
-  opacity: 0.8;
+  background-color: #111;
 }
 
 /* Extra styles for the cancel button */
@@ -146,6 +144,8 @@ span.psw {
      width: 100%;
   }
 }
+
+/*nav bar*/
  ul {
   list-style-type: none;
   margin: 0;
@@ -195,11 +195,12 @@ li1{
   float: left;
 }
 
+/*
 #vraag{
   height:200px;
   width: 400px;
   font-size:14pt;
-}
+}*/
 
 .footer {
   width: 100%;
