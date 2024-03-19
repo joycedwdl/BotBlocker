@@ -78,6 +78,8 @@ img.avatar {
 span.psw {
   float: right;
   padding-top: 16px;
+  margin-left: 1.5%;
+  margin-bottom: 1%;
 }
 
 /* The Modal (background) */
@@ -243,9 +245,15 @@ button:hover {
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.cancelbtn {
   float: left;
-  width: 50%;
+  width: 45%;
+  margin-left: 2.5%;
+}
+.signup {
+  float: right;
+  width: 45%;
+  margin-right: 2.5%;
 }
 
 /* Add padding to container elements */
