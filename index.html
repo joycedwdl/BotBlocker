@@ -51,21 +51,22 @@
           </div>
       
           <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <h2 class="row">Log in</h2>
+            <label class="row" for="uname"><b>Username</b></label>
+            <input class="row" type="text" placeholder="Enter Username" name="uname" required>
       
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label class="row" for="psw"><b>Password</b></label>
+            <input class="row" type="password" placeholder="Enter Password" name="psw" required>
             <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
+              <input class="row" type="checkbox" checked="checked" name="remember"> Remember me
             </label>
             <br><br>
-            <div class="clearfix">
-              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-              <button type="submit" class="signup">login</button>
+            <div class="clearfix row">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn col">Cancel</button>
+              <button type="submit" class="signup col">login</button>
             </div>  
           </div>
-          <span class="psw">Forgot <a href="#">password?</a></span>
+          <span class="psw row">Forgot <a href="#">password?</a></span>
   
         </form>
       </div>
@@ -113,27 +114,27 @@
     <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
     <form class="modal-content" action="./index.html">
         <div class="container">
-        <h2>Sign Up</h2>
-        <p>Please fill in this form to create an account.</p>
+        <h2 class="row">Sign Up</h2>
+        <p class="row">Please fill in this form to create an account.</p>
         <hr>
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+        <label class="row" for="email"><b>Email</b></label>
+        <input class="row" type="text" placeholder="Enter Email" name="email" required>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label class="row" for="psw"><b>Password</b></label>
+        <input class="row" type="password" placeholder="Enter Password" name="psw" required>
 
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <label class="row" for="psw-repeat"><b>Repeat Password</b></label>
+        <input class="row" type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
         <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            <input class="row" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
         </label>
 
-        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <p class="row">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
         <br>
-        <div class="clearfix">
-            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signup">Sign Up</button>
+        <div class="clearfix row">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn col">Cancel</button>
+            <button type="submit" class="signup col">Sign Up</button>
         </div>
         </div>
     </form>
