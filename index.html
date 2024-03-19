@@ -12,31 +12,34 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
-    <div class="header">
-      <h1 id="title">BotBlocker</h1>
-      <p1>Samen tegen opkoop bots</p1>
-    </div>
+  <body class="container">
+  
+            <div class="header">
+                <h1 class="row" id="title">BotBlocker</h1>
+                <p1 class="row">Samen tegen opkoop bots</p1>
+            </div>
+
+
 
     <!--menu desktop version-->
-    <ul>
-      <li class="menu"><a onclick="LoadPage('menu.html','BotBlocker','Menu')">Home</a></li>
-      <li class="menu"><a onclick="LoadPage('kaartenkopen.html','Kaarten kopen','Kaarten kopen')">Kaarten kopen</a></li>
-      <li class="menu"><a onclick="LoadPage('overons.html','Over ons','Over ons')">Over ons</a></li>
-      <li class="menu"><a onclick="LoadPage('contact.html','Contact','Contact')">Contact</a> </li>
-      <li class="menu">
-        <!--<div class="search">
-          <form action="#">
-            <input type="text" placeholder="Zoeken" required>
-            <button type="submit">Submit</button>
-          </form>
-        </div>-->
-      </li>
-      <li class="menu" style="float: right;">
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
-      <li class="menu" style="float: right;">
-    <button onclick="document.getElementById('id02').style.display='block'">Sign Up</button></li>
-    </ul>
+        <ul class="row">
+            <li class="menu col"><a onclick="LoadPage('menu.html','BotBlocker','Menu')">Home</a></li>
+            <li class="menu col"><a onclick="LoadPage('kaartenkopen.html','Kaarten kopen','Kaarten kopen')">Kaarten kopen</a></li>
+            <li class="menu col"><a onclick="LoadPage('overons.html','Over ons','Over ons')">Over ons</a></li>
+            <li class="menu col"><a onclick="LoadPage('contact.html','Contact','Contact')">Contact</a> </li>
+            <li class="menu col">
+                <!--<div class="search">
+                <form action="#">
+                    <input type="text" placeholder="Zoeken" required>
+                    <button type="submit">Submit</button>
+                </form>
+                </div>-->
+            </li>
+            <li class="menu col">
+            <button onclick="document.getElementById('id02').style.display='block'">Sign Up</button></li>
+            <li class="menu col">
+                <button onclick="document.getElementById('id01').style.display='block'">Login</button></li>
+        </ul>
     
     <!--log in page-->
     <div id="id01" class="modal">
@@ -85,12 +88,6 @@
       </div>
     </div>
 
-    <div class="footer" id="footer">
-            @ 2024 <a href="https://BotBlocker.com" target="_blank">BotBlocker.com</a>
-            <p><img src="./images/logo1.png" alt="logo" width="60" height="60"></p>
-            <p>Privacy  Cookies  Disclaimer  Toegankelijkheid</p>
-    </div>
-
     <!-- javascript -->
     <script>
         async function LoadPage(html,title,item) {
@@ -111,48 +108,55 @@
     
     <!--signup page-->   
 
-<!-- The Modal (contains the Sign Up form) -->
-<div id="id02" class="modal">
-  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal"></span>
-  <form class="modal-content" action="./index.html">
-    <div class="container">
-      <h2>Sign Up</h2>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+    <!-- The Modal (contains the Sign Up form) -->
+    <div id="id02" class="modal">
+    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="./index.html">
+        <div class="container">
+        <h2>Sign Up</h2>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
 
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-      <br>
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signup">Sign Up</button>
-      </div>
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <br>
+        <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signup">Sign Up</button>
+        </div>
+        </div>
+    </form>
     </div>
-  </form>
-</div>
-    <script>
-    // Get the modal
-    var modal = document.getElementById('id02');
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
-    }
-    </script>
-    <!--bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+        </script>
+        <!--bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </div>
+
+    <div class="footer" id="footer">
+        @ 2024 <a href="https://BotBlocker.com" target="_blank">BotBlocker.com</a>
+        <p><img src="./images/logo1.png" alt="logo" width="60" height="60"></p>
+        <p>Privacy  Cookies  Disclaimer  Toegankelijkheid</p>
+    </div>
+</body>
 </html>

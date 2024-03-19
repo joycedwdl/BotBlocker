@@ -10,8 +10,6 @@ html {
 .header {
   padding: 20px;
   text-align: center;
-  /*background-color: teal;
-  background-image: linear-gradient(to top right, teal, #fffdd0);*/
   background-color: black;
   background-image: linear-gradient(to top right, black, grey);
 
@@ -22,6 +20,7 @@ h1 {
   background: -webkit-linear-gradient(#a47a1e, #d3a84c, #ffec94, #e6be69, #ffd87c, #b58f3e, #956d13);
   background-clip: text;
   color: transparent;
+  font-family: "times new roman";
 }
 
 h2{
@@ -33,6 +32,7 @@ p1{
   background: -webkit-linear-gradient(#a47a1e, #d3a84c, #ffec94, #e6be69, #ffd87c, #b58f3e, #956d13);
   background-clip: text;
   color: transparent;
+  font-family: "times new roman";
 }
 
 /*log in page*/
