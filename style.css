@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+html {
+  scrollbar-color: #80c0c0 lightgrey;
+}
+
 .header {
   padding: 20px;
   text-align: center;
@@ -18,6 +22,10 @@ h1 {
   background: -webkit-linear-gradient(#a47a1e, #d3a84c, #ffec94, #e6be69, #ffd87c, #b58f3e, #956d13);
   background-clip: text;
   color: transparent;
+}
+
+h2{
+  font-size: 24px;
 }
 
 p1{
@@ -162,6 +170,7 @@ span.psw {
 
 li {
   float: left;
+  color: white;
 }
 
 li a {
