@@ -72,6 +72,11 @@
       background-color: teal;
       background-image: linear-gradient(to top right, teal, #e5e0cf);
     }
+
+    button.row{
+      background-color: teal;
+      color: white;
+    }
   </style>
 </head>
 
@@ -109,6 +114,23 @@
       </ul>
     </div>
   </nav>
+
+  <div class="container mt-5">
+    <div class="col-sm-8">
+      <form action="automatischereactie.html">
+        <p class="row">Email:</p>
+        <input class="row" type="text" placeholder="Voorbeeld@mail.nl" required></p>
+        <div class="mb-4">
+          <label for="messageField" class="form-label row">Vraag:</label>
+          <textarea class="form-control row" id="messageField" placeholder="Typ hier uw bericht..." rows="3"></textarea>
+        </div>
+        <button class="row" type="submit">Submit</button>
+      </form>
+      <p class="row">Verder kun je contact met ons opnemen via:</p>
+      <p class="row">&#x260F 088 991 7000</p>
+      <p class="row">&#9993 studentinfo@nhlstenden.com</p>
+    </div>
+  </div>
 
   <!-- The sign up Modal -->
   <div class="modal" id="myModal1">
@@ -187,25 +209,6 @@
       </div>
     </div>
   </div>
-
-  <div class="container mt-5">
-    <div class="col-sm-8">
-      <form action="automatischereactie.html">
-        <p class="row">Email:</p>
-        <input class="row" type="text" placeholder="voorbeeld@mail.nl" required></p>
-        <div class="mb-4">
-          <label for="messageField" class="form-label row">Vraag:</label>
-          <textarea class="form-control row" id="messageField" placeholder="Typ hier uw bericht..." rows="3"></textarea>
-        </div>
-        <button class="row" type="submit">Submit</button>
-      </form>
-      <p class="row">Verder kun je contact met ons opnemen via:</p>
-      <p class="row">&#x260F 088 991 7000</p>
-      <p class="row">&#9993 studentinfo@nhlstenden.com</p>
-    </div>
-  </div>
-
-
 
   <div id="footer" class="mt-5 p-4 text-dark text-center">
     <p>@ 2024 <a href="https://BotBlocker.com" target="_blank">BotBlocker.com</a></p>
