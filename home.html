@@ -64,7 +64,7 @@
       color: white;
     }
 
-    button.nav-link.btn.btn-primary{
+    button.nav-link.btn.btn-primary {
       background-color: teal;
     }
 
@@ -84,30 +84,35 @@
 
   <nav id="navbar" class="navbar navbar-expand-sm navbar-dark sticky-top">
     <div class="container-fluid">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="home.html" onclick="LoadPage('home.html','BotBlocker','home')">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="kaartenkopen.html"
-            onclick="LoadPage('kaartenkopen.html','Kaarten kopen','Kaarten kopen')">Kaarten kopen</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="overons.html" onclick="LoadPage('overons.html','Over ons','Over ons')">Over ons</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html" onclick="LoadPage('contact.html','Contact','Contact')">Contact</a>
-        </li>
-        <li class="nav-item">
-          <button type="button" class="nav-link btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">
-            Sign up
-          </button>
-        <li class="nav-item">
-          <button type="button" class="nav-link btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-            Log in
-          </button>
-        </li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kaartenkopen.html">Kaarten kopen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="overons.html">Over ons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">
+              Sign up
+            </button>
+          <li class="nav-item">
+            <button type="button" class="nav-link btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+              Log in
+            </button>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
